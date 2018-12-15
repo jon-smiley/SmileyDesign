@@ -1,2 +1,0 @@
-# SmileyDesign
-TestDesignLibrary
