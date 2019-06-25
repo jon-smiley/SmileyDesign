@@ -1,0 +1,47 @@
+.layoutDefault{
+    position: relative;
+    width: 100%;
+    /* box-shadow: 11px 10px 14px 3px rgba(115, 121, 119, 0.205); */
+    margin: 0px 0px 8px 0px;
+    display: inline-flex;
+}
+
+.footerDefault{
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    min-height: 13em;
+    /* background: rgb(235, 235, 235); */
+}
+
+.footerBackgroundHeightDefault {
+    background: rgb(235, 235, 235);
+    height: inherit;
+}
+
+.footerContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.marginLg{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: solid red;
+}
+
+.marginMd{
+    margin: 0px, 2%, 0px, 2%;
+}
+
+.marginSm{
+    margin: 0px, 2%, 0px, 2%;
+}
+
+@media (max-width: 900px){
+    .layoutDefault{
+        display: block;
+    }
+}
+

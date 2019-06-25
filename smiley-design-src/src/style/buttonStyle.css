@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+.red{
+    background: rgba(255, 44, 44, 0.185);
+}
+.blue{
+    background: rgba(46, 106, 218, 0.301);
+}
+.green{
+    background: rgba(1, 59, 11, 0.404);
+}
+.yellow{
+    background: rgba(255, 255, 88, 0.685);
+}
+.clear{
+    background: rgba(230, 222, 222, 0.863);
+}
+ /* button layout */
+ .buttonWidthLg{
+     min-width: 150px;
+ }
+ .buttonWidthMd{
+    min-width: 100px;
+ }
+ .buttonWidthSm{
+    min-width: 50px;
+ }
+ .buttonDefaultDem{
+     height:50px;
+ }
+ /* font size */
+ .fontSizeLg{
+    font-size: 25px;
+ }
+ .fontSizeMd{
+    font-size: 20px;
+ }
+ .fontSizeSm{
+    font-size: 15px;
+ }
+
+ /* button default */
+ .buttonDefault{
+    border: 0 solid;
+    height: 60px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(17, 17, 17);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin: 2px .5px 2px .5px;
+ }
+
+ button:hover {
+    background: rgba(146, 146, 146, 0.644);
+  }
+
+  
+
+

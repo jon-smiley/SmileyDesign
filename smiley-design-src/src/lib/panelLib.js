@@ -1,0 +1,1 @@
+// export default panelReferenceLib = ['color', 'width', 'height', 'shadow', 'border', 'padding', 'margin'];
