@@ -46,3 +46,9 @@
 .navFloatRight {
     float: right;
 }
+
+.hideButtonSpacer button{
+    background: white;
+    color: white;
+    cursor: inherit;
+  }
