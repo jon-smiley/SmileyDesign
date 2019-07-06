@@ -50,13 +50,13 @@ export default class App extends Component {
 
 // when the navSidebarPosition={"left"} on the NavBar 
     return (
-      <Main typeContainer="main" > 
-          <NavBar design={i.f}>
-            <Button design={i.a}>test</Button>
+      <Main typeContainer="main"> 
+          <NavBar design={i.f} navSidebarPosition="left">
+            <Button design={i.a}>tests</Button>
             <Button design={i.a}>test</Button>
             <Button design={i.a}>test</Button>
           </NavBar>
-          <Main typeContainer="sub" >
+          <Main typeContainer="sub">
             <Layout>
               <Panel>
                 <Button design={i.a}>Test</Button>
