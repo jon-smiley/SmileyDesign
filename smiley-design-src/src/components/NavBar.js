@@ -48,17 +48,22 @@ class NavBar extends Component {
         for (var classString in renderElementArray){
             classStyleString += this.findCssModules(renderElementArray[classString]) + globalValues.space;
         }
-        
+        var navFloatRight = (navSidebarPosition === globalValues.right ? styleSheet.navFloatRight : globalValues.space);
+
        if (navSidebarPosition){
-           classStyleString += styleSheet.navSideDisplayEdit;
+            if(navSidebarPosition === globalValues.right){
+                classStyleString += styleSheet.navSideDisplayRightEdit;
+            } else {
+                classStyleString += styleSheet.navSideDisplayLeftEdit;
+            }
        } else {
-        classStyleString += styleSheet.navTopPositioningBoxShadow;
+            classStyleString += styleSheet.navTopPositioningBoxShadow;
        }
 
         return (
             <Fragment>
                 {/* changing nav bar, top bar */}
-                <div>
+                <div className={navFloatRight}>
                     <div className={navTopPositioning}>
                         <div className={styleSheet.navBarDefault + classStyleString}>
                                 {children}
