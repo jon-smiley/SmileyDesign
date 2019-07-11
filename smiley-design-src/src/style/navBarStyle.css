@@ -23,49 +23,32 @@
     box-shadow: 6px 5px 19px 0px rgba(115, 121, 119, 0.205);
     position: fixed;
     height: 100%;
+    /* right: 0; */
 }
 
 .navTopPositioningBoxShadow {
     box-shadow: 6px 5px 19px 0px rgba(115, 121, 119, 0.205);
 }
-.navSideDisplayEdit{
+.navSideDisplayLeftEdit{
     height: 100%;
     display: inherit;
     width: auto;
     position: inherit;
 }
 
-/* .sidenav {
+.navSideDisplayRightEdit{
     height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgba(248,248,242, .9);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    display: inherit;
+    width: auto;
+    position: inherit;
 }
 
-.sidenav h3 {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
+.navFloatRight {
+    float: right;
 }
 
-.sidenav h3:hover {
-    color: rgba(153, 189, 215, .4);
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-} */
+.hideButtonSpacer button{
+    background: white;
+    color: white;
+    cursor: inherit;
+  }

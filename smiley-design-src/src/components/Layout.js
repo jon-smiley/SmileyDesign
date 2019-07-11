@@ -47,15 +47,13 @@ class Layout extends Component {
                             {children}
                     </div> 
                     :
-                    <div>
-                        <div className={styleSheet.footerBackgroundHeightDefault}>
-                            <div className={classStyleString + styleSheet.footerDefault}>
-                                <div className={styleSheet.footerContainer}>
-                                    {children}
-                                </div>
+                    <div className={styleSheet.footerBackgroundHeightDefault}>
+                        <div className={classStyleString + styleSheet.footerDefault}>
+                            <div className={styleSheet.footerContainer}>
+                                {children}
                             </div>
-                        </div> 
-                    </div>
+                        </div>
+                    </div> 
                 }
             </Fragment>
         )
