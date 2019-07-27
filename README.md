@@ -1,5 +1,6 @@
 # Smiley Design
 This library provides a simple way to have responsive containers available to quickly build web layouts. 
+
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://npmjs.org/package/REPO "View this project on npm")
 
 ## Install
@@ -79,7 +80,8 @@ There are two types of Main containers, one to house the entire application and 
 ### Todos
 -----------------------------------
  - Add design features and more web templates.
+ 
 
-## License
+### License
 -----------------------------------
 MIT © [jon-smiley](https://github.com/jon-smiley)
