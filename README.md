@@ -82,4 +82,4 @@ There are two types of Main containers, one to house the entire application and 
 
 ## License
 -----------------------------------
-MIT
+MIT © [jon-smiley](https://github.com/jon-smiley)
