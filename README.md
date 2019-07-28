@@ -10,7 +10,7 @@ npm install --save smiley-design
 ```
 ### Layout and Panel
 -----------------------------------
-A Container for the Panel component. This component allows multiple Panel components to stay in one container. A Layout holds Panels inline with each other.
+The Layout component allows multiple Panel components to stay in one container. Panels will stay inline with each other.
 ```jsx
 import React, { Component } from 'react'
 import { Main, Layout, Panel } from 'smiley-design'
