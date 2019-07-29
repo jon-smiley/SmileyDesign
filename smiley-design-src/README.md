@@ -37,7 +37,7 @@ export default class App extends Component {
             <Layout>
                 <Panel>
                   <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius posuere lorem vel molestie. Sed blandit urna eget laoreet pulvinar. Nunc non turpis auctor, congue ex vitae, convallis nisl. Nullam nec dui non leo efficitur pharetra in sit amet quam. Praesent neque justo, gravida non lacinia ut, consectetur eget elit. Nullam fermentum dictum faucibus. </p>
+                    <p>Lorem ipsum dolor sit amet</p>
                   </div>
                 </Panel>   
             </Layout>
