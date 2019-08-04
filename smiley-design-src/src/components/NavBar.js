@@ -59,19 +59,13 @@ class NavBar extends Component {
        } else {
             classStyleString += styleSheet.navTopPositioningBoxShadow;
        }
-
         return (
             <Fragment>
                 {/* changing nav bar, top bar */}
                     <div className={navTopPositioning}>
-                        { (navSidebarPosition) ? 
-                            <div className={styleSheet.navBarDefault + classStyleString + globalValues.space + styleSheet.hideButtonSpacer}>
-                                {children}
-                            </div> : 
-                            <div className={styleSheet.navBarDefault + classStyleString}>
-                                {children}
-                            </div>
-                        }
+                        <div className={styleSheet.navBarDefault + classStyleString}>
+                            {children}
+                        </div>
                     </div>
                     { (!navSidebarPosition) ? 
                         <div className={styleSheet.basicSpacing}>
@@ -79,13 +73,15 @@ class NavBar extends Component {
                     }
                 {/* Moving navBar with fixed bar */}
                 { (navSidebarPosition) ?
+                <div>
                     <div className={styleSheet.navFixedContainer}>
-                        <div>
+                        <div className={styleSheet.navStickyContainer}>
                             <div className={styleSheet.navBarDefault + classStyleString}>
-                                {children}
+                                    {children}
                             </div>
                         </div>
                     </div>
+                </div>
                     : globalValues.space
                 }
             </Fragment>

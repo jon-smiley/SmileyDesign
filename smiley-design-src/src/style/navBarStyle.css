@@ -21,9 +21,12 @@
 /* side menu options */
 .navFixedContainer{
     box-shadow: 6px 5px 19px 0px rgba(115, 121, 119, 0.205);
-    position: fixed;
     height: 100%;
-    /* right: 0; */
+}
+
+.navStickyContainer{
+    position: sticky;
+    top:0;
 }
 
 .navTopPositioningBoxShadow {
