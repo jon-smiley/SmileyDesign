@@ -5,6 +5,8 @@ var globalStateValues = {
         main: 'main',
         sub: 'sub',
         left: 'left',
-        right: 'right'
+        right: 'right',
+        fireFox: 'Firefox',
+        chrome: 'Chrome'
 };
 export default globalStateValues
