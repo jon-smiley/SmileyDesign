@@ -63,15 +63,9 @@ class NavBar extends Component {
             <Fragment>
                 {/* changing nav bar, top bar */}
                     <div className={navTopPositioning}>
-                        { (navSidebarPosition) ? 
-                            // <div className={styleSheet.navBarDefault + classStyleString + globalValues.space + styleSheet.hideButtonSpacer}>
-                            //     {children}
-                            // </div> : 
-                            globalValues.space :
-                            <div className={styleSheet.navBarDefault + classStyleString}>
-                                {children}
-                            </div>
-                        }
+                        <div className={styleSheet.navBarDefault + classStyleString}>
+                            {children}
+                        </div>
                     </div>
                     { (!navSidebarPosition) ? 
                         <div className={styleSheet.basicSpacing}>
