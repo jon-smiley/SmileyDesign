@@ -62,26 +62,28 @@ class NavBar extends Component {
         return (
             <Fragment>
                 {/* changing nav bar, top bar */}
-                    <div className={navTopPositioning}>
-                        <div className={styleSheet.navBarDefault + classStyleString}>
-                            {children}
-                        </div>
-                    </div>
-                    { (!navSidebarPosition) ? 
-                        <div className={styleSheet.basicSpacing}>
-                        </div> : globalValues.space
-                    }
-                {/* Moving navBar with fixed bar */}
-                { (navSidebarPosition) ?
-                <div>
-                    <div className={styleSheet.navFixedContainer}>
-                        <div className={styleSheet.navStickyContainer}>
+                { (!navSidebarPosition) ? 
+                    <span>
+                        <div className={navTopPositioning}>
                             <div className={styleSheet.navBarDefault + classStyleString}>
-                                    {children}
+                                {children}
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div className={styleSheet.basicSpacing}></div> 
+                    </span>
+                    : globalValues.space
+                }
+                {/* Moving navBar with fixed bar */}
+                { (navSidebarPosition) ?
+                    <span>
+                        <div className={styleSheet.navFixedContainer}>
+                            <div className={styleSheet.navStickyContainer}>
+                                <div className={styleSheet.navBarDefault + classStyleString}>
+                                        {children}
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                     : globalValues.space
                 }
             </Fragment>
