@@ -43,7 +43,7 @@ class Main extends Component {
             classStyleString += this.findCssModules(renderElementArray[classString]) + globalValues.space;
         }
 
-        if (globalValues.navSidebarPosition){
+        if (globalValues.navSidebarPosition === globalValues.left){
             classStyleString += styleSheet.navPositionSide;
         } 
         if ((window.navigator.userAgent.indexOf(globalValues.chrome) != -1) && (typeContainer === globalValues.main)){

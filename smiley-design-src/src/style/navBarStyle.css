@@ -39,12 +39,12 @@
     position: inherit;
 }
 
-.navSideDisplayRightEdit{
+/* .navSideDisplayRightEdit{
     height: 100%;
     display: inherit;
     width: auto;
     position: inherit;
-}
+} */
 
 .navFloatRight {
     float: right;
