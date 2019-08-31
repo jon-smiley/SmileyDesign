@@ -46,6 +46,9 @@ class Main extends Component {
         if (globalValues.navSidebarPosition){
             classStyleString += styleSheet.navPositionSide;
         } 
+        if ((window.navigator.userAgent.indexOf(globalValues.chrome) != -1) && (typeContainer === globalValues.main)){
+          classStyleString += styleSheet.mainChromeContainer + globalValues.space;
+        }
 
         return (
             <Fragment>

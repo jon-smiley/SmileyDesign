@@ -1,22 +1,19 @@
 .layoutDefault{
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     /* box-shadow: 11px 10px 14px 3px rgba(115, 121, 119, 0.205); */
     margin: 0px 0px 8px 0px;
     display: inline-flex;
 }
 
 .footerDefault{
-    /* position: absolute; */
-    /* bottom: 0; */
     width: 100%;
     min-height: 13em;
-    /* background: rgb(235, 235, 235); */
 }
 
 .footerBackgroundHeightDefault {
     background: rgb(235, 235, 235);
-    height: inherit;
+    height: 100%;
 }
 
 .footerContainer{
