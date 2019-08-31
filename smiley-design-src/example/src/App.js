@@ -55,8 +55,7 @@ export default class App extends Component {
                   </div>
                 </Panel>
             </Layout>
-            <Layout footer={true}>
-            </Layout>
+            
           </Main>
       </Main>
     )

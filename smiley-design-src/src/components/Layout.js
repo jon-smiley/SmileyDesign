@@ -42,11 +42,11 @@ class Layout extends Component {
 
         return (
             <Fragment>
-                { (!footer) ?
+                {/* { (!footer) ? */}
                     <div className={classStyleString + styleSheet.layoutDefault}>
                             {children}
                     </div> 
-                    :
+                    {/* :
                     <div className={styleSheet.footerBackgroundHeightDefault}>
                         <div className={classStyleString + styleSheet.footerDefault}>
                             <div className={styleSheet.footerContainer}>
@@ -54,7 +54,7 @@ class Layout extends Component {
                             </div>
                         </div>
                     </div> 
-                }
+                } */}
             </Fragment>
         )
     }
