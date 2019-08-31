@@ -9,28 +9,32 @@
     min-height: fit-content;
     min-height: -moz-fit-content;
     width: 100%;
+    overflow: hidden;
   }
 
-@media (max-width: 1550px){
+/* @media (max-width: 1550px){
     .mainContainer{
-      position: inherit;
+      overflow: hidden;
     }
-}
+} */
 
 .mainChromeContainer{
   position: absolute;
+  overflow: unset;
 }
 
 .subContainer {
   /* all Main components within the outer most container */
-    margin-top: 90px;
+    /* margin-top: 90px; */
     width: 100%;
     min-height: fit-content;
     min-height: -moz-fit-content;
     /* height: -moz-max-content; */
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .navPositionSide{
     margin-top: inherit;
   }
+
+ 

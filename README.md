@@ -54,25 +54,6 @@ export default class App extends Component {
 }
 ```
 
-### Footer
------------------------------------
-Footer is the Layout component with a prop passing in footer={true}. The footer will fill the bottom of the window.
-```jsx
-import React, { Component } from 'react'
-import { Main, Layout } from 'smiley-design'
-
-export default class App extends Component {
-
-  render () {
-    return (
-        <Main typeContainer="main"> 
-            <Layout footer={true}>
-                Content goes here.
-            </Layout>
-        </Main>
-    )
-}
-```
 ### Main
 -----------------------------------
 There are two types of Main containers, one to house the entire application and one for bigger sections of the webpage. Inorder for the page to be responsive you will need to add a Main container to the outside of the project with the prop of typeContainer="main" and every other Main container having a prop of typeContainer="sub".
