@@ -48,36 +48,42 @@ class NavBar extends Component {
         for (var classString in renderElementArray){
             classStyleString += this.findCssModules(renderElementArray[classString]) + globalValues.space;
         }
-        
-       if (navSidebarPosition){
-           classStyleString += styleSheet.navSideDisplayEdit;
-       } else {
-        classStyleString += styleSheet.navTopPositioningBoxShadow;
-       }
+        var navFloatRight = (navSidebarPosition === globalValues.right ? styleSheet.navFloatRight : globalValues.space);
 
+       if (navSidebarPosition){
+            if(navSidebarPosition === globalValues.right){
+                classStyleString += styleSheet.navSideDisplayRightEdit;
+            } else {
+                classStyleString += styleSheet.navSideDisplayLeftEdit;
+            }
+       } else {
+            classStyleString += styleSheet.navTopPositioningBoxShadow;
+       }
         return (
             <Fragment>
                 {/* changing nav bar, top bar */}
-                <div>
-                    <div className={navTopPositioning}>
-                        <div className={styleSheet.navBarDefault + classStyleString}>
-                                {children}
-                        </div>
-                    </div>
-                    { (!navSidebarPosition) ? 
-                        <div className={styleSheet.basicSpacing}>
-                        </div> : globalValues.space
-                    }
-                </div>
-                {/* Moving navBar with fixed bar */}
-                { (navSidebarPosition) ?
-                    <div className={styleSheet.navFixedContainer}>
-                        <div>
+                { (!navSidebarPosition) ? 
+                    <span>
+                        <div className={navTopPositioning}>
                             <div className={styleSheet.navBarDefault + classStyleString}>
                                 {children}
                             </div>
                         </div>
-                    </div>
+                        <div className={styleSheet.basicSpacing}></div> 
+                    </span>
+                    : globalValues.space
+                }
+                {/* Moving navBar with fixed bar */}
+                { (navSidebarPosition) ?
+                    <span>
+                        <div className={styleSheet.navFixedContainer}>
+                            <div className={styleSheet.navStickyContainer}>
+                                <div className={styleSheet.navBarDefault + classStyleString}>
+                                        {children}
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                     : globalValues.space
                 }
             </Fragment>

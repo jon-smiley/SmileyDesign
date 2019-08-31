@@ -22,7 +22,7 @@
 /* Panel Default */
  .panelDefault{
      box-shadow: 2px 8px 9px 1px rgba(115, 121, 119, 0.205);
-     padding: 5px;
+     padding: 10px;
      margin:  25px 8px 25px 8px;
      position: relative;
      width: 100%;
@@ -30,6 +30,7 @@
 
  @media(max-width: 900px){
      .panelDefault{
-         margin: 25px 0px 25px 0px;
+        margin: 25px 0px 25px 0px;
+        width: inherit; 
      }
  }
